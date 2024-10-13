@@ -1,5 +1,7 @@
 ---
 import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
 type Props = {
   title: string;
   description?: string;
@@ -15,17 +17,19 @@ const { title, description = "Get the best quality clothing designs" } =
     <meta charset="utf-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="generator" content={Astro.generator} />
+    <meta
+      name="keywords"
+      content="Zaly, Clothing, Men wears, Women wears, Bags, shoes, Jackets, Dress, Stylish, Urban clothing"
+    />
+    <meta />
+    <meta />
     <title>{title}</title>
   </head>
   <body>
     <Nav />
     <slot />
+    <Footer />
   </body>
 </html>
-
-<style>
-  body {
-    background-color: rgb(249, 255, 215);
-  }
-</style>

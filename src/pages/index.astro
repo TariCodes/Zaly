@@ -4,9 +4,52 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout title="Zaly | Best Clothing Brand">
   <div class="container">
-    <h2>Featured Products</h2>
-    <h2>New Products</h2>
-    <h2>For Women</h2>
-    <h2>For Men</h2>
+    <header>
+      <div class="container">
+        <!-- slider contents should be placed here for slideshow -->
+      </div>
+    </header>
+
+    <section class="product">
+      <div class="container">
+        <h2>Top Products</h2>
+        <div class="card">
+          <img
+            width="200"
+            height="200"
+            src="/src/images/adidas-trackjacket.png"
+            alt=""
+          />
+          <p class="product__name">Adidas Jacket</p>
+          <p class="product__price">$385.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img
+            width="200"
+            height="200"
+            src="/src/images/Denim-Jacket-black-01.png"
+            alt=""
+          />
+          <p class="product__name">Denim Jacket</p>
+          <p class="product__price">$800.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img
+            width="200"
+            height="200"
+            src="/src/images/grey-hoodie.png"
+            alt=""
+          />
+          <p class="product__name">Denim Jacket</p>
+          <p class="product__price">$800.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Arrivals Denim Jacket $800.99 For Men
+    Raphael Polo $435.99 For Women Yves Saint Lauren $890.99 Blog -->
   </div>
 </MainLayout>
